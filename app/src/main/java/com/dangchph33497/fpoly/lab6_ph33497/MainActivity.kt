@@ -54,7 +54,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             Lab6_PH33497Theme {
-
+                MovieScreen(movies = Movie.getSampleMovies())
             }
         }
     }
@@ -182,7 +182,9 @@ fun MovieItem(movie: Movie, listType: ListType) {
                 model = movie.posterUrl,
                 contentDescription = null,
                 contentScale = ContentScale.FillWidth,
-                modifier = Modifier.wrapContentHeight().fillMaxWidth()
+                modifier = Modifier
+                    .wrapContentHeight()
+                    .fillMaxWidth()
             )
             Column(
                 modifier = Modifier.padding(8.dp)

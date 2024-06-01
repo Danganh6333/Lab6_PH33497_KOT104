@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Lab6_PH33497</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_activity_cinema_seat_booking">CinemaSeatBooking</string>
 </resources>
